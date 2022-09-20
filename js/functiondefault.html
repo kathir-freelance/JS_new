@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        console.log(a);//undefined
+        var a;//hositing
+        // function display(){
+        //     console.log("hii");
+        // }
+        // display();//hii
+        // display();//hii
+        // display(90);//hii 90 parameter is ignored
+      
+      //2nd scenario
+
+      function display(a)//a is an argument
+      {
+            console.log("hii ",a);
+        }
+        display();//undefined
+        display();//undefined
+        display(90);//90 //parameter
+        var f=890;
+        display(f);//f is a parameter
+
+        function write(name='guest')//default value
+        {
+           // name="harish"
+            console.log("write ",name);//write ajay
+        }
+        write();//write guest
+        write(undefined);//write guest
+        write("ajay");//write ajay
+
+        // get(){//function keyword is importnt for declaring a function
+        //     console.log("get function ");
+        // }
+        //get();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

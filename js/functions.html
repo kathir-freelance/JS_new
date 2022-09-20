@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          add();
+         var res= sub();
+         console.log(res);
+         
+         res=  add(1,2);
+         console.log(res);
+
+         res=  add(11,21);
+         console.log(res);
+
+         var t=23;
+         var u=67;
+         res=  add(t,u);
+         console.log(res);
+        function add() 
+        {
+            var a = 90;
+            var b = 89;
+            var c = a + b;
+            consolex.log("value of c is :: ", c);
+        }
+        function sub(){
+
+            var a=90;
+            var b=78;
+            var c=a-b;
+            return c;
+        }
+        function add(a,b){
+            return a+b;
+        }
+        
+        a=90;
+        console.log(a);//undefined
+        var a;//hoisting
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

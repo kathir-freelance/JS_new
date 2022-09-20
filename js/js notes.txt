@@ -1,0 +1,24 @@
+Ctrl+/ hotkey for a single-line comment and something like Ctrl+Shift+/ – for multiline comments
+
+A variable is a “named storage” for data.
+
+To create a variable in JavaScript, use the let,var,const keyword.
+
+syntax:
+    var varname;//declaration
+    var varname=value;//initialization
+    var a=90;
+    var a=93;
+
+
+let instead of var:
+
+let , const is block scoped
+let message;
+message = 'Hello!';
+message = 'World!'; // value changed
+alert(message);
+
+let message = "This";
+// repeated 'let' leads to an error
+let message = "That"; // SyntaxError: 'message' has already been declared

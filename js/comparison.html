@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numb = 90;
+        if (56)//+ ve number true
+        {
+            console.log("i am true");
+        }
+        if (0) {
+            console.log("i am true");
+        }
+        else {
+            console.log("i am false");
+        }
+        if (-56) {
+            console.log("i am true");
+        }
+        else {
+            console.log("i am false");
+        }
+        var a = 1200, b = 195, c = 1450;
+
+        if (a > b && a > c) {
+            console.log("a is greater ", a);
+        }
+        else if (b > c) {
+            console.log("b is greater ", b)
+        }
+        else {
+            console.log("c is greater ", c);
+        }
+
+        console.log("not true statement");
+
+        if (a > b || a > c) {
+            console.log("a is graeter ", a);//logically wrong
+        }
+
+        if (a > c || a > b) {
+            console.log("a is graeter ", a);//wrong -logical
+        }
+        var year = 2013;
+        if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+            console.log(year + ' is a leap year');
+        } else {
+            console.log(year + ' is not a leap year');
+
+            // var n1=89;
+            // if(!(n1%2==0)){
+            //     console.log("number is even");
+            // }
+            // else{
+            //     console.log("number is odd");
+            // }
+            var booleanValue = false;
+            console.log(!booleanValue);
+
+
+            var t;
+            t ?? "hello";
+            console.log(t);
+            //      console.log( t??"hello");
+            t = t ?? "hello";
+            console.log(t);
+
+            var t1 = "welcome";
+            t1 = t1 ?? "hello";
+            console.log(t1);
+
+            let firstName = null;
+            let lastName = null;
+            let nickName = "Supercoder";
+
+            // shows the first defined value:
+            console.log(firstName ?? lastName ?? nickName ?? "Anonymous");
+
+            let firstName1 = null;
+            let lastName1 = null;
+            let nickName1 = "Supercoder";
+
+            // shows the first truthy value:
+        //    alert(firstName1 || lastName1 || nickName1 || "Anonymous"); // Supercoder
+
+            //switch
+            
+           // var option = prompt("1. tea, 2. coffee, 3. milk ->enter ur option ");
+           // console.log(typeof option);
+          var option =1;
+            switch (option) {
+                case 1:
+                    console.log("tea is served");
+                   break;
+                case 2:
+                    console.log("coffee is served");
+                    break;
+                case 3:
+                    console.log("milk is served");
+                    break;
+
+                default:
+                    console.log("enter proper input");
+                    //break; //optional , but mandatory when kept in between other case
+            }
+//one, One  - no
+//One,ONe no
+//ONE-one
+           var option ='oNE';
+            //var option ='One';//enter proper input because O is caps
+            switch (option) {
+                case 'one':
+                case 'One':
+                case 'ONE':
+                case 'ONe': 
+                case 'oNe': 
+                case 'oNE':
+                    console.log("number is 1");
+                   break;
+                case 'two':
+                    console.log("number is 2");
+                    break;
+                case 'three':
+                    console.log("number is 3");
+                    break;
+
+                default:
+                    console.log("enter proper input");
+                    //break; //optional , but mandatory when kept in between other case
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

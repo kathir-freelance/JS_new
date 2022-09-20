@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var a=90;
+        // function f1(){
+        //     console.log(a);
+        // }
+        // console.log(a);
+        // f1();
+        //2
+        // var a=90;
+        // function f1(){
+        //     a=900;
+        //     console.log(a);
+        // }
+        // console.log(a);
+        // f1();
+        //3
+        // var a=90;
+        // function f1(){
+        //     a=900;
+        //     console.log(a);
+        // }
+        // f1();
+        // console.log(a);
+        //    //4
+        //     var a=90;
+        //     function f1(){
+        //        var a=900;
+        //         console.log(a);
+        //     }
+        //     f1();//900
+        //     console.log(a);//90
+        var a = 90;
+        var a = 98655;//global scope
+        function f1() {
+            var b = 89;
+            var a = 900;//function or local scope
+            for (let a = 1; a < 10; a++)//block scoped
+            {
+                const b = 2132;
+                console.log("for ", a, b);//12345...9
+                //   b++;//assignment to constant var error
+            }
+            console.log(a, b);//10
+        }
+        f1();//900
+        console.log(a);//90
+
+        let from = "ajay";//variable hoisting
+        for (var t = 0; t < 3; t++)
+            console.log(t)
+       // let from ="vinay";//redeclaration now allowed
+       //same var name cnnot be used again
+
+     //   p=896;
+     //   console.log(p)//error =>Cannot access 'p' before initialization
+      //  let p;
+           console.log(f1)
+
+           
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

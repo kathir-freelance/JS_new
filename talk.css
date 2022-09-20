@@ -1,0 +1,51 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+section {
+    background-color: rgb(211, 244, 177);
+    padding: 20px;
+}
+
+.container {
+    border: solid red 7px;
+    width: 65%;
+    height: 1500px;
+    margin: auto;
+    display: flex;
+}
+
+.personal {
+    background-color: rgb(120, 120, 123);
+    width: 35%;
+    height: 100%;
+}
+
+#box1{
+    margin-top: 100px;
+    margin-right: 0px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.professional {
+    background-color: rgb(224, 229, 234);
+    width: 65%;
+    height: 100%;
+}
+
+#box5{
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+}
