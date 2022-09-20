@@ -156,3 +156,4 @@ function makeUser(myage,name) {
     console.log(y);
   console.log(y.name);
   console.log(y.myage);
+  console.log(y.myage);
