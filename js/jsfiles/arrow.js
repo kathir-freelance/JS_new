@@ -42,3 +42,19 @@ let my=(a,b,c)=>{
 console.log(my(2,3,1));
 let my1=(a,b,c)=>a+b+c;
 console.log(my1(2,3,1));
+
+
+function getArray(myarr){
+
+    for(var i=0;i<=myarr.length-1;i++){
+        console.log(myarr[i])
+    }
+}
+getArray([1,2,3,4,5]);
+
+let getArr=(myarr)=>{
+    for(var i=0;i<=myarr.length-1;i++){
+        console.log(myarr[i])
+    }
+}
+getArr([5,627,83,94,5]);
