@@ -139,3 +139,58 @@ console.log(Object.isFrozen(obj5));//not frozen
 
 console.log(obj4.hasOwnProperty('a'));
 console.log(obj5.hasOwnProperty('a'));
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.keys(object1));
+
+const arr = ['a', 'b', 'c'];
+console.log(Object.keys(arr));
+const anObj = { 100: 'a', 2: 'b', 7: 'c' };
+console.log(Object.keys(anObj));//2,7,100 will be in ascending order
+const object2 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.values(object2));
+
+let object3 = {};
+console.log(object3);
+console.log(Object.keys(object3));
+console.log(Object.values(object3));
+object3={a:1,b:2}//default writable val is true
+console.log(object3);
+object3.a=12;
+console.log(object3);
+console.log(Object.keys(object3));
+console.log(Object.values(object3));
+object3.c=90;//default writable val is true
+console.log(object3);
+Object.defineProperty(object3,"d",{value:3456,writable:true,enumerable:false});//default writable prop is false
+console.log(object3);
+object3.d=90;//cannot change
+console.log(object3.d);
+let k=Object.keys(object3);
+for(let f of k){//for in- will print index
+  console.log(f)
+}
+Object.defineProperty(object3,"c",{writable:false});
+object3.c=88;
+console.log(object3.c)
+
+
+let f={w:34,l:45};
+f.l=8989;
+console.log(f)
+Object.defineProperties(f,{
+  l:{writable:false},
+  b:{value:4,writable:true}//by default writable will be false
+})
+f.l=1;
+f.b=7654;
+console.log(f)
