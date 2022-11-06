@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert {
+          padding: 15px;
+          border: 1px solid #d6e9c6;
+          border-radius: 4px;
+          color: #3c763d;
+          background-color: #dff0d8;
+        }
+        </style>
+</head>
+<body id='data' display="dpy">
+   
+        <input style='color:red' id="input" type="text">
+        <button type="button" style='color:red' onclick="addStyle()">button1</button>
+        <input type="button" onclick="countRabbits()" value="Count rabbits!"/>
+</body>
+<button onclick="alert(this)">Click me</button>
+<h1 onclick="alert(this)">Click me</h1>
+<div onclick="alert(this.innerHTML)">click div</div>
+
+<div  id="divfunc">click div with external js</div>
+<script src="attr.js"></script>
+</html>
