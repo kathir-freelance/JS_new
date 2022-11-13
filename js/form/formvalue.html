@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- if form tag is not there we can get value only by sing id attribute
+    if form there u can access tht element by using name attribute in addition with form name or id attr -->
+    <form name="myForm">
+    <input type="text" name='inp' value="123" />  <br/>
+    <textarea name="tarea" autofocus> hi hello</textarea> <br/>
+    <!-- the value is not in innerHTML, still its accessed by value attribute only -->
+    <input type="radio" name='gender' value="F" checked/> Female<br/>
+    <input type="radio" name='gender' value="M"/>Male
+
+    <br/>
+    <select id="select">
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+      </select>
+</form>
+</body>
+<script src="formval.js"></script>
+</html>
