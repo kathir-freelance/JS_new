@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul.my>li:nth-child(4){
+            color:blueviolet;
+        }
+        :nth-child(3){
+            color:teal;
+        }
+        a{
+            color:yellow;
+            background-color: red;
+        }
+        a:hover{
+            color:white;
+        }
+        input:disabled{
+            background-color: green;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">click</a>
+    <input id="txt" disabled/>
+    <button id="btn" onclick="enable()">click</button>
+    <div>
+        <p>This is some text.</p>
+      </div>
+      
+      <div>
+        <p>This is some text.</p>
+      </div>
+      
+      <div>
+        <p>This is some text.</p>
+      </div>
+      
+      <ul class="my">
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+      </ul>
+      <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+      </ul>
+      <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+      </ul>
+</body>
+<script>
+var t=document.getElementById('txt');
+
+function enable(){
+    t.disabled=false;
+}
+</script>
+</html>

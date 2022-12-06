@@ -1,0 +1,19 @@
+div {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #cccccc;
+}
+.scroll{
+    overflow: scroll;
+}
+.hidden{
+    overflow: hidden;
+}
+div>p{
+    font-size: 16px;
+    /* line-height: 2.5em; */
+    overflow: scroll;
+}
+span{
+    display: block;
+}
