@@ -286,3 +286,111 @@
 //     res=await prom()
 //     console.log('hi ',res)
 // }
+
+var obj={}//object class
+console.log(typeof(obj))
+console.log(typeof obj)
+obj={name:'ajay',age:28}
+console.log(obj.name,obj.age)
+obj.name='vinay'
+console.log("after changing name ",obj.name,obj.age)
+obj['age']=34
+console.log("after changing age ",obj.name,obj.age)
+
+// console.log(Object.keys(obj))
+// console.log(Object.values(obj))
+
+for (let key of Object.keys(obj))
+   {
+     console.log(key)
+    console.log(obj[key])
+   }
+
+   let user = {
+    name: "John",
+    age: 30,
+    isAdmin: true
+  };
+  console.log('name1' in user)
+  console.log("name1" in ["name1","name2"])
+ for(i in ["name1","name2"])//use of in array, and in in obj
+ {
+    console.log(i)//i is index
+ }
+  for (let key in user) {
+    // keys
+    console.log( key );  // name, age, isAdmin
+    // values for the keys
+    console.log( user[key] ); // John, 30, true
+  }
+
+let user1 = { name: "John" };
+let admin = user1; // copy the reference(memory)
+console.log(user1.name)//shares not values but memory
+admin.name="alex"//changes made by admin is reflected in user1
+console.log(user1.name)
+
+let user2 = {
+    name: "John",
+    age: 30
+  };
+  
+  let clone = {}; // the new empty object
+  
+  // let's copy all user properties into it
+  for (let key in user2) {
+    clone[key] = user2[key];
+  }  
+  // now clone is a fully independent object with the same content
+  clone.name = "Pete"; // changed the data in it
+  console.log( clone.name );
+  console.log( user2.name );
+
+function emp(){
+
+}
+
+class emp1{
+    //default constructor function
+    constructor(n='maybe'){
+        console.log('am i called?? ',n)
+    }
+  //  Uncaught SyntaxError: A class may only have one constructor
+    // constructor(t){
+    //     console.log('am i called?? ',t)
+    // }
+}
+
+var empObj=new emp1()//calls constr function in class emp1
+console.log(empObj)
+var empObj1=new emp1('yes')
+console.log(empObj1)
+
+
+class Taxi{
+   //this.id ,this.brand and this.price creates 3 instance var
+   //instance var belong to object
+   //thy help creating objects 
+    constructor(id,brand,price){
+        this.id=id
+        this.brand=brand
+        this.price=price
+    }
+}
+
+let t1=new Taxi()
+let t2=new Taxi(101,'tata',78999)
+console.log(t1);
+console.log(t2);
+t1.brand="toyoto"
+console.log(t1);
+console.log(t2);
+
+function Vehicle(id,brand,price){
+    this.id=id
+    this.brand=brand
+    this.price=price
+}
+
+let v=new Vehicle(111,'tata',78765)
+console.log(v)
