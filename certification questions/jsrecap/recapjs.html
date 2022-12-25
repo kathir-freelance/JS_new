@@ -7,7 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <button  id="btn" onclick="normalFun()">click</button>
+    <!-- <button  id="btn" onclick="normalFun()">click</button> -->
+    
+        <form action="#" onsubmit="getData(event)">
+          
+            <input type="text" id="pdtname" name="pdtname" ><br>
+          
+            <input type="text" id="price" name="price" ><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+        <button  id="btn" onclick="deleteCartItem()">Remove</button>
+
+        <button  id="btn" onclick="displayAllCustomer()">Display</button>
+        <table id="content">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>city</th>
+              </tr>
+        </table>
 </body>
 <script src="recap.js"></script>
 </html>
