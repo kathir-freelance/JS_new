@@ -7,6 +7,7 @@ fetch("./image.json")
 .then(data => 
     {
         all=data.sample;
+        console.log(all[0].numb)
         console.log(all)
         print(all)
       //  document.write(`<img src=${all[0].image} alt='no image'/>`)
@@ -40,7 +41,7 @@ function call1(){
         }
         );
     }
-    call1()
+   // call1()
 function print1(all)
 {
 console.log('in print',all)
