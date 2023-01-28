@@ -47,7 +47,6 @@
 
   var a=90;
   var b=100;
-
  var promise=new Promise(function(resolve,reject){
        a<b?
        resolve(g `${a} is great`)
