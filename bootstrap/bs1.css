@@ -1,0 +1,18 @@
+.box{
+    padding: 5px;
+    background-color: red;
+    margin: 50px;
+    width: 50px;
+    height: auto;
+}
+.bg-primary{
+    /* background-color: yellow; */
+    font-size: 30px;
+}
+.text-white{
+    font-size: 70px;
+    color:red;
+}
+.container-sm{
+    background-color: aqua;
+}
