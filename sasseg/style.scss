@@ -1,0 +1,30 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+  color:yellow;
+}
+#data{
+    $myColor:green !global;
+    color: $myColor;
+    @debug $myColor;
+}
+.old{
+    @debug $myColor;
+    color: $myColor;
+}
+$a: 1;
+@if 2 + 2 == 4 {
+    $a: 2 !global;
+}
+@debug $a;
+@debug $myColor;

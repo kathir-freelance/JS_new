@@ -1,0 +1,6 @@
+$myColor: red;
+@import "myst";
+body {
+  color: $myColor;
+  font-size: 18;
+}

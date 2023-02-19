@@ -1,0 +1,5 @@
+$myColor: yellow;
+@debug myColor;
+body {
+  color: $myColor;
+}
