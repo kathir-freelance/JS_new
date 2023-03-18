@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The localStorage Property</h2>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<p><button onclick="normal()" type="button">Click me-normal!</button></p>
+
+<p>Number of clicks:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+<script>
+clickCounter();
+var s=0;
+function normal(){
+    ++s;
+    document.getElementById("demo1").innerHTML = s;
+}
+function clickCounter() {
+    localStorage.clickcount
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  
+  document.getElementById("demo").innerHTML = localStorage.clickcount;
+}
+</script>
+
+</body>
+</html>

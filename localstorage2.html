@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    a value is ::
+<span id="demo">  </span>
+<button onclick="del()">delete</button>
+    <script>
+        loc=window.localStorage;
+        loc.setItem('a',123);
+        loc.b=900;
+        document.getElementById("demo").innerHTML =loc.getItem('a') ;
+        function del(){
+            loc.removeItem('a')
+            document.getElementById("demo").innerHTML =loc.getItem('b') ;
+        }
+    </script>
+</body>
+</html>
