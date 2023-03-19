@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cartLength"></div>
+        <div id="all-products1">
+           
+        </div>
+        <!-- 
+
+        </div> -->
+    <script>
+         var prods=[
+            {id:1001,name:"tv",price:6232},
+            {id:1021,name:"ac",price:1932},
+            {id:1301,name:"fridge",price:9232},
+            {id:1056,name:"alexa",price:5232},
+            {id:2001,name:"fan",price:4232},
+            {id:1441,name:"air cooler",price:1232},
+         ]
+         var old="";
+         var res;
+         var cartCount=0;
+         var clicked=false;
+      
+       //  var btnCounter=0;
+            prods.forEach(x=>
+                {
+                    var goToCart=`<a id="gotocart${x.id}" href="cartPage.html" style="visibility:hidden">go to cart</a><br/>`;
+                    var addLink=`<div id="all-products${x.id}"><button id="btn${x.id}" onclick='addToCart(${x.id})'>add to cart</button></div><br/>`;
+                   // console.log(addLink)
+                   console.log(clicked)
+                    var html="name :: "+x.name+" id:: "+x.id+" price:: "+x.price+ addLink+goToCart;
+                  
+                    res=old+html;                    
+                    old=res;
+                   // console.log("--",res)
+                    document.getElementById("all-products1").innerHTML=res;
+                   // document.getElementById("all-products2").innerHTML= addLink;
+                    
+                }
+            )
+            prodList=[]
+           
+            function addToCart(id){
+                clicked=true;
+            //   /  console.log(clicked)
+                var pdt=getProdById(id);
+                prodList.push(pdt)
+                console.log(prodList)
+                cartCount=prodList.length;
+                console.log(cartCount)
+                document.getElementById("cartLength").innerHTML=cartCount;
+                document.getElementById("btn"+id).setAttribute("disabled","disabled");
+                document.getElementById("btn"+id).setAttribute("style"," visibility:hidden");
+                document.getElementById("gotocart"+id).removeAttribute("style");
+                
+            }
+            function getProdById(id){
+                 return prods.filter(x=>{
+                   // console.log(x)
+                    if(id===x.id){
+                       console.log(x)
+                        return x;
+                    }
+                 })  
+            }
+    </script>
+</body>
+</html>
